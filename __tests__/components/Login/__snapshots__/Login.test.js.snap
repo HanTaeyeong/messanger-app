@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Login Component test renders well 1`] = `
+<div>
+  <input
+    className="login-input"
+  />
+  <button
+    className="login-button"
+  >
+    Sign in
+  </button>
+</div>
+`;

@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`recoil test render test 1`] = `
+<div>
+  <head
+    className="date"
+  >
+    0
+  </head>
+  <div
+    className="week-name"
+  >
+    Sunday
+  </div>
+  <button
+    className="test-button"
+    onClick={[Function]}
+  >
+    increase
+  </button>
+</div>
+`;
