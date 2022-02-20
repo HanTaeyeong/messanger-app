@@ -8,7 +8,7 @@ export default function RecoilTestComponent() {
   const [weekName, setWeekName] = useRecoilState(testWeekName)
   
   const onClick = () => {
-    setDate(1)
+    setDate(+date+1)
   }
   
   return (
