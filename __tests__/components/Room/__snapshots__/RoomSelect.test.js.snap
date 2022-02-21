@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Login Component test renders well 1`] = `
+<div
+  className="room-list"
+>
+  <div
+    className="room-list-item"
+  >
+    first room
+  </div>
+  <div
+    className="room-list-item"
+  >
+    second room
+  </div>
+</div>
+`;

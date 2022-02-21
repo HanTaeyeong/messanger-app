@@ -21,7 +21,6 @@ export default function Login() {
         <input className='login-input' placeholder='Password' name={'password'} onChange={e => onChange(e)}></input>
         <button className='login-button' onClick={e => onClick(e)}>Sign in</button>
       </form>
-
     </div>
   )
 }
