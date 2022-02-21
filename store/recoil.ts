@@ -12,3 +12,17 @@ export const testWeekName = selector<String>({
     get: ({ get }) => weekList[(+get(testDate) % 7) | 0] || 'Sunday',
     set: ({ set }) => { }
 });
+
+export enum loginStateEnum{
+    LOGIN,
+    LOGOUT,
+    GUEST
+}
+
+export const userData = atom<Object>({
+    key: 'userData',
+    default: {
+        name: '',
+        loginState: loginStateEnum.LOGOUT,
+    }
+})

@@ -2,13 +2,25 @@
 
 exports[`Login Component test renders well 1`] = `
 <div>
-  <input
-    className="login-input"
-  />
-  <button
-    className="login-button"
-  >
-    Sign in
-  </button>
+  <form>
+    <input
+      className="login-input"
+      name="ID"
+      onChange={[Function]}
+      placeholder="ID"
+    />
+    <input
+      className="login-input"
+      name="password"
+      onChange={[Function]}
+      placeholder="Password"
+    />
+    <button
+      className="login-button"
+      onClick={[Function]}
+    >
+      Sign in
+    </button>
+  </form>
 </div>
 `;
