@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Login Component test renders well 1`] = `
+<div
+  className="room-list"
+>
+  <div>
+    Create Room
+  </div>
+  <a
+    className="room-list-item"
+    href="/room/12"
+    id="12"
+    onClick={[Function]}
+    onMouseEnter={[Function]}
+  >
+    first room
+  </a>
+  <a
+    className="room-list-item"
+    href="/room/53"
+    id="53"
+    onClick={[Function]}
+    onMouseEnter={[Function]}
+  >
+    second room
+  </a>
+  <div>
+    Search Room
+  </div>
+</div>
+`;

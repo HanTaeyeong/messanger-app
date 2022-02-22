@@ -1,9 +1,9 @@
 import React from 'react'
 
-import TestRenderer from 'react-test-renderer';
+import TestRenderer, { act } from 'react-test-renderer';
 import { RecoilRoot } from 'recoil'
 
-import RoomSelect from '../../../components/Room/RoomSelect'
+import RoomSelect from '../../../components/RoomSelect/RoomSelect'
 
 
 describe('Login Component test', () => {
@@ -22,8 +22,10 @@ describe('Login Component test', () => {
     })
 
     test('room list item test', () => {
-        expect(testComponent.root.findByProps({ className: "room-list" })
-            .children[0].children[0]).toBe('first room')
-    })
+        const divs =  testComponent.root.findAllByType('a');
 
+        const items = divs.map(item => item.props).filter(item => item.className === 'room-list-item')
+        expect(items[0].children).toBe('first room')
+        expect(items[1].children).toBe('second room')
+    })
 })

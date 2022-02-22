@@ -1,4 +1,6 @@
 import React from 'react'
+import Link from 'next/link'
+
 
 const mockRooms = [
   { id: '12', name: 'first room' },
@@ -9,9 +11,18 @@ function RoomSelect() {
 
   return (
     <div className='room-list'>
+      <div>Create Room</div>
+
       {mockRooms.map(room =>
-        <div className='room-list-item' key={room.id} >{room.name}</div>
+        <Link href={`/room/${room.id}`}>
+          <a className='room-list-item' id={room.id} key={room.id}>
+            {room.name}
+          </a>
+        </Link>
       )}
+
+      <div>Search Room</div>
+
     </div>
   )
 }
