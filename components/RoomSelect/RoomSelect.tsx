@@ -14,11 +14,13 @@ function RoomSelect() {
       <div>Create Room</div>
 
       {mockRooms.map(room =>
-        <Link href={`/room/${room.id}`}>
-          <a className='room-list-item' id={room.id} key={room.id}>
-            {room.name}
-          </a>
-        </Link>
+        <div key={room.id}>
+          <Link href='/room/[roomId]' as={`/room/${room.id}`} >
+            <a className='room-list-item' id={room.id} >
+              {room.name}
+            </a>
+          </Link>
+        </div>
       )}
 
       <div>Search Room</div>
