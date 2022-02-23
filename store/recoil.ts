@@ -19,10 +19,11 @@ export enum loginStateEnum{
     GUEST
 }
 
-export const userData = atom<Object>({
+export const userData = atom({
     key: 'userData',
     default: {
         name: '',
+        ID:'',
         loginState: loginStateEnum.LOGOUT,
     }
 })

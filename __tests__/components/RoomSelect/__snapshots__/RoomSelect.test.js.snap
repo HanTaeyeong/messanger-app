@@ -8,6 +8,9 @@ exports[`Login Component test renders well 1`] = `
     Create Room
   </div>
   <div>
+    [object Object]
+  </div>
+  <div>
     <a
       className="room-list-item"
       href="/room/12"

@@ -1,6 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
-
+import { useRecoilValue } from 'recoil'
+import { userData } from '../../store/recoil'
 
 const mockRooms = [
   { id: '12', name: 'first room' },
@@ -8,11 +9,11 @@ const mockRooms = [
 ]
 
 function RoomSelect() {
-
+  const ud = useRecoilValue(userData);
+  
   return (
     <div className='room-list'>
-      <div>Create Room</div>
-
+      <div>Welcome! {ud.ID}</div>
       {mockRooms.map(room =>
         <div key={room.id}>
           <Link href='/room/[roomId]' as={`/room/${room.id}`} >

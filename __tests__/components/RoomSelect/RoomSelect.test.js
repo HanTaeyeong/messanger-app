@@ -22,7 +22,7 @@ describe('Login Component test', () => {
     })
 
     test('room list item test', () => {
-        const divs =  testComponent.root.findAllByType('a');
+        const divs = testComponent.root.findAllByType('a');
 
         const items = divs.map(item => item.props).filter(item => item.className === 'room-list-item')
         expect(items[0].children).toBe('first room')
